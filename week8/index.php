@@ -2034,19 +2034,19 @@ textarea.form-input::-webkit-resizer { display: none; }
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="index.html">
+            <a href="index.php">
             <button class="navbar-link  active" data-nav-link>About</button>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="forms.html">
+            <a href="forms.php">
             <button class="navbar-link" data-nav-link>Forms</button>
           </a>
           </li>
 
           <li class="navbar-item">
-            <a href="contact.html">
+            <a href="contact.php">
             <button class="navbar-link" data-nav-link>Contact</button>
             </a>
           </li>

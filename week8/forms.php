@@ -450,19 +450,11 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 2px;
 }
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
-
-/*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
 
 .navbar {
   position: fixed;
@@ -496,6 +488,7 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
+
 
 
 
@@ -1891,43 +1884,81 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+
 .container {
-      width: 50%;
-      margin: auto;
+      background-color: #1d1d1d;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 900px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-top: 40px;
     }
     h2 {
       color: #ffffff;
     }
     .error {
-      color: red;
+      color: #e74c3c;
+      margin-bottom: 10px;
     }
     form {
       margin-top: 20px;
     }
     label {
       display: block;
-      margin-bottom: 5px;
-      color: white;
+      margin-bottom: 8px;
+      color: #ffffff;
     }
     input, textarea {
       width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
       box-sizing: border-box;
+      font-size: 16px;
     }
     input[type="radio"] {
       margin-right: 5px;
     }
-    input[type="submit"] {
-      background-color: #4CAF50;
+
+     .gender-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
       color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
     }
+    .gender-group label {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+    .input-group {
+      margin-bottom: 10px;
+      color: white;
+    }
+    .result {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+      color: white;
+    }
+
+
 </style>
-  <!--
+   <!--
     - #MAIN
   -->
 
@@ -2070,19 +2101,19 @@ textarea.form-input::-webkit-resizer { display: none; }
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="index.html">
+            <a href="index.php">
             <button class="navbar-link  active" data-nav-link>About</button>
             </a>
           </li>
 
           <li class="navbar-item">
-            <a href="forms.html">
+            <a href="forms.php">
             <button class="navbar-link" data-nav-link>Forms</button>
           </a>
           </li>
 
           <li class="navbar-item">
-            <a href="contact.html">
+            <a href="contact.php">
             <button class="navbar-link" data-nav-link>Contact</button>
             </a>
           </li>
@@ -2141,35 +2172,45 @@ function test_input($data) {
   return $data;
 }
 ?>
-<div class="container">
+
   <h2>PHP Form Validation Example</h2>
+  <div class="container">
   <p><span class="error">* required field</span></p>
 
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" value="<?php echo $name;?>">
-    <span class="error">* <?php echo $nameErr;?></span>
+    <div class="input-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" value="<?php echo $name;?>">
+      <span class="error"><?php echo $nameErr;?></span>
+    </div>
 
-    <label for="email">E-mail:</label>
-    <input type="text" name="email" id="email" value="<?php echo $email;?>">
-    <span class="error">* <?php echo $emailErr;?></span>
+    <div class="input-group">
+      <label for="email">E-mail:</label>
+      <input type="text" name="email" id="email" value="<?php echo $email;?>">
+      <span class="error"><?php echo $emailErr;?></span>
+    </div>
 
-    <label for="website">Website:</label>
-    <input type="text" name="website" id="website" value="<?php echo $website;?>">
-    <span class="error"><?php echo $websiteErr;?></span>
+    <div class="input-group">
+      <label for="website">Website:</label>
+      <input type="text" name="website" id="website" value="<?php echo $website;?>">
+      <span class="error"><?php echo $websiteErr;?></span>
+    </div>
 
-    <label for="comment">Comment:</label>
-    <textarea name="comment" id="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+    <div class="input-group">
+      <label for="comment">Comment:</label>
+      <textarea name="comment" id="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+    </div>
 
-    <label>Gender:</label>
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-    <span class="error">* <?php echo $genderErr;?></span>
+    <div class="gender-group">
+      <label>Gender:</label>
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+      <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+      <span class="error"><?php echo $genderErr;?></span>
+    </div>
 
     <input type="submit" name="submit" value="Submit">  
   </form>
-
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
