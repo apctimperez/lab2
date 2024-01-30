@@ -1890,6 +1890,41 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.container {
+      width: 50%;
+      margin: auto;
+    }
+    h2 {
+      color: #ffffff;
+    }
+    .error {
+      color: red;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 </style>
   <!--
     - #MAIN
@@ -2105,6 +2140,7 @@ function test_input($data) {
   return $data;
 }
 ?>
+<form>
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
