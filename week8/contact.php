@@ -1890,6 +1890,54 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+h1 {
+            
+            color: #ffffff;
+        }
+
+        form {
+            max-width: 1000px;
+            margin: 20px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #202020;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #5b665b;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
 </style>
   <!--
     - #MAIN
@@ -2055,315 +2103,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hello there! I'm Timothy Louise R. Perez, a 20-year-old BSIT-MI student from Asia Pacific College with
-			a passion for designing and developing websites. I find joy in designing websites in figma and believe in the 
-			power of continuous learning. Whether it's exploring the intricacies of Information Technology or
-			delving into the pages of a good book, I thrive on the excitement of discovery.
-          </p>
-
-          <p>
-            Outside of my professional or academic pursuits, you'll often find me playing guitar, basketball, and going
-			to car meets and car parties, which helps me strike a balance between school and play. I am dedicated to
-			lifelong learning, always seeking opportunities to expand my knowledge and skills, and I enjoy connecting with others
-			who share similar interests. Let's embark on this journey together, exchanging ideas and creating meaningful
-			connections!
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">My Hobbies or Interests</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="chill.jpg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Spending Time in Nature</h4>
-
-                <p class="service-item-text">
-                  Spending time in nature holds a special place in my heart, as it provides me with a 
-				  profound sense of peace and rejuvination.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="car.jpg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bond with my Car</h4>
-
-                <p class="service-item-text">
-                  My project car is more than just a set of wheels; it's a passion, a journey, and a canvas for self-expression.
-				  Working on my project car provides me with a sense of accomplishment and fulfillment that extends beyond the
-				  mechanical intricacies.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="nature.jpg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Going to the River</h4>
-
-                <p class="service-item-text">
-                  I love going to the river because it offers me a serene escape from the hustle and bustle
-				  of daily life. The ryhthmic flow of the water, the gentle rustle of leaves, and the calming
-				  sounds of nature create a tranquil atmosphere that instantly soothes my mind and rejuvinates
-				  my spirit.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="dog.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Play with my Dog</h4>
-
-                <p class="service-item-text">
-                  Playing with my dog is an absolute joy, creating a bond that goes beyond words. The sheer 
-				  enthusiasm and boundless energy my furry friend brings to our playtime are infectious, lifting
-				  my spirits and infusing my day with positivity.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Skills</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="ui-ux.png" alt="UI/UX" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>UI/UX</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    In the realm of UI/UX design, I have honed a versatile skill set that combines creativity, <br>
-					user-centricity, and technical proficiency. With a strong foundation in design principles,
-					I am adept at creating visually appealing and intuitive user interfaces that seamlessly
-					intergrate with a user's journey.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="js.jpg" alt="Javascript" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Javascript</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I possess a solid proficiency in Javascript, with a focus on both front-end and back-end
-					development.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="css.jpg" alt="CSS" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>CSS</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I possess a strong proficiency in CSS, and my skills encompass a range of capabilities that contribute 
-					to creating visually appealing and responsive web designs.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="html.png" alt="HTML" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>HTML</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I can create well-structured HTML documents, using tags to define different elements like headings,
-					paragraphs, lists, and more.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Gallery</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="1.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="2.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="3.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="4.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="5.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="6.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
+      <h1>Contact Us</h1>
+    
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+     
 	  
 
 
