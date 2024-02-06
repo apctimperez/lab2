@@ -1990,9 +1990,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="sidebar-info_more"></div>
 
-        <div class="separator">
+        <div class="separator"></div>
 
         <ul class="contacts-list">
 
