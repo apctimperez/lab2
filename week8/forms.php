@@ -324,6 +324,10 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
+/*-----------------------------------*\
+  #SIDEBAR
+\*-----------------------------------*/
+
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
@@ -450,7 +454,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 2px;
+  font-size: 18px;
 }
 
 
