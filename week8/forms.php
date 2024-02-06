@@ -1968,7 +1968,7 @@ textarea.form-input::-webkit-resizer { display: none; }
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+  <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -1990,14 +1990,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
       </div>
 
-      <div class="sidebar-info_more"></div>
+      <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
         <ul class="contacts-list">
 
           <li class="contact-item">
-	  </div>
 
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -2022,7 +2021,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
               <a href="tel:+12133522795" class="contact-link">+63 992 420 5591</a>
             </div>
-	
 
           </li>
 
