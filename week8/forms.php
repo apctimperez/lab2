@@ -1903,6 +1903,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     }
     form {
       margin-top: 20px;
+	    color: gray;
     }
     label {
       display: block;
