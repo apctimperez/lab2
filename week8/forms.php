@@ -450,11 +450,19 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 2px;
+  font-size: 18px;
 }
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
+
+
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
 
 .navbar {
   position: fixed;
@@ -488,7 +496,6 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
-
 
 
 
@@ -1886,7 +1893,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .container {
-      background-color: #1d1d1d;
+      background-color: #383c2e;
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       width: 900px;
@@ -1968,7 +1975,7 @@ textarea.form-input::-webkit-resizer { display: none; }
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+  <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -2222,6 +2229,40 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+?>
+
+
+
+<?php
+
+// For Xampp localhost
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "myDB";
+
+// For Socit Cloud
+$servername = "localhost";
+$username = "webprogmi221";
+$password = "g_6bCitLu.ljMK*m";
+$dbname = "webprogmi221";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO trperez_myguests (name, email, website, comment, gender)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+
+if ($conn->query($sql) === TRUE){
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
 
 </html>
