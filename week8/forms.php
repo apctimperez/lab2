@@ -306,7 +306,6 @@ article.active {
 
 
 
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -320,10 +319,6 @@ main {
 
 
 
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -461,6 +456,14 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
+
+
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
 .navbar {
   position: fixed;
   bottom: 0;
@@ -493,7 +496,6 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
-
 
 
 
