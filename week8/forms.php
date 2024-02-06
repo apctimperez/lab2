@@ -1886,7 +1886,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .container {
-      background-color: #1d1d1d;
+      background-color: #7e848e;
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       width: 900px;
@@ -1903,7 +1903,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     }
     form {
       margin-top: 20px;
-	    color:#7e848e;
     }
     label {
       display: block;
