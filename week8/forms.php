@@ -1890,7 +1890,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .container {
-      background-color: #7e848e;
+      background-color: #383c2e;
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       width: 900px;
